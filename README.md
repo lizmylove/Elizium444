@@ -18,7 +18,9 @@ III. Спам кодами входа в аккаунт
 
 
 
-
+<p align="center">
+<img src="https://github.com/lizmylove/Elizium/blob/main/png-klev-club-p-razdelitel-png-13.png", width="200", height="200">
+</p>
 
 
 

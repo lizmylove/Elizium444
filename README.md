@@ -47,5 +47,5 @@ III. Спам кодами входа в аккаунт
 
 #### Author: @fanat_bosina
 <p align="center">
-<img src="https://github.com/lizmylove/Elizium/blob/main/Screenshot_20241011-232436~2.png", width="50", height="50">
+<img src="https://github.com/lizmylove/Elizium/blob/main/1f5ff.png", width="80", height="80">
 </p>

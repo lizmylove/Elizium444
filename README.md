@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/lizmylove/Elizium/blob/main/Screenshot_20241011-232436~2.png", width="800", height="500">
+<img src="https://github.com/lizmylove/Elizium/blob/main/Screenshot_20241011-232436~2.png", width="800", height="1600">
 </p>
 
 

@@ -11,7 +11,7 @@ II. Отправка жалоб с заготовленным текстом
 III. Спам кодами входа в аккаунт
 
 
-Для установки(одна инструкция для Linux и Termux):
+##### Установка (одна инструкция для Linux и Termux):
 
 # git clone https://github.com/lizmylove/Elizium
 

@@ -12,19 +12,20 @@ III. Спам кодами входа в аккаунт
 
 
 Для установки(одна инструкция для Linux и Termux):
-I. git clone https://github.com/lizmylove/Elizium
 
-II. cd Elizium
+# I. git clone https://github.com/lizmylove/Elizium
 
-III. pip install os
-pip install subprocess
-pip install sys
-pip install time
-pip install random
+# II. cd Elizium
 
-IV. python install.py
+# III. pip install os
+# pip install subprocess
+# pip install sys
+# pip install time
+# pip install random
 
-V. python main.py
+# IV. python install.py
+
+# V. python main.py
 
 
 

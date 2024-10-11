@@ -24,11 +24,11 @@ III. Спам кодами входа в аккаунт
 
 `cd Elizium`
 
-`pip install os
-pip install subprocess
-pip install sys
-pip install time
-pip install random`
+`pip install os`
+`pip install subprocess`
+`pip install sys`
+`pip install time`
+`pip install random`
 
 `python install.py`
 

@@ -43,9 +43,9 @@ III. Спам кодами входа в аккаунт
 
 `python main.py`
 
-
+<p align="center">
+<img src="https://github.com/lizmylove/Elizium/blob/main/png-klev-club-p-razdelitel-png-13.png", width="200", height="200">
+</p>
 
 #### Author: @fanat_bosina
-<p align="center">
-<img src="https://github.com/lizmylove/Elizium/blob/main/1f5ff.png", width="80", height="80">
-</p>
+

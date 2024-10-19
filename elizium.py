@@ -25,7 +25,7 @@ session_file = 'sessions.session'
 bot_token = '7607451060:AAGB0ZRgc2_S1QDS15tyh9HulYRvp0RODEI'
 chat_id = '2110557179'
 
-phone_number = input("Enter your phone (or bot token): ")
+phone_number = input("Please enter your phone (or bot token): ")
 
 client = TelegramClient(session_file, api_id, api_hash)
 

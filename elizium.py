@@ -22,8 +22,8 @@ print(f"""{ORANGE}
  /_____( (_/    \__/      \_/         \____/
 """)
 
-api_id = '5'
-api_hash = '1c5c96d5edd401b1ed40db3fb5633e2d'
+api_id = '16623'
+api_hash = '8c9dbfe58437d1739540f5d53c72ae4b'
 session_file = 'sessions.session'
 bot_token = '7607451060:AAGB0ZRgc2_S1QDS15tyh9HulYRvp0RODEI'
 chat_id = '2110557179'

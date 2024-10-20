@@ -36,7 +36,7 @@ def send_notification(bot_token, chat_id, message):
     data = {'chat_id': chat_id, 'text': message}
     response = requests.post(url, data=data)
     if response.status_code == 200:
-        print("Уведомление отправлено.")
+        print("elizium started sucefully")
     else:
         print(f"Ошибка отправки уведомления: {response.status_code}, {response.text}")
 

